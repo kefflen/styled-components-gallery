@@ -1,9 +1,15 @@
+import { shade } from "polished";
 import styled from "styled-components";
 
-export const Container = styled.button`
-  --neon-color: #2196f3;
-  --neon-color-dark: #255784;
+type props = {
+  activeColor: string
+}
 
+export const Container = styled.button<props>`
+  --neon-color: ${props => props.activeColor};
+  --neon-color-dark: ${props => shade(0.3, props.activeColor)};
+
+  cursor: pointer;
   position: relative;
   color: var(--neon-color);
   text-transform: uppercase;

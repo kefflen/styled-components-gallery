@@ -9,7 +9,6 @@ html, body {
 
 .App {
   padding: 2em;
-  height: 100vh;
   display: flex;
   gap: 5em;
   flex-wrap: wrap;

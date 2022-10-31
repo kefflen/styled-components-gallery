@@ -5,7 +5,10 @@
 html, body {
   margin: 0;
   background-color: rgb(16, 14, 27);
+  color: white;
+  letter-spacing: 0.05em;
 }
+
 .App {
   height: 100vh;
 }

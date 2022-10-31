@@ -1,9 +1,8 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 export const Container = styled.div`
   position: relative;
   width: 250px;
-
 `
 
 export const StyledInput = styled.input`
@@ -34,8 +33,10 @@ export const LabelText = styled.label`
   ${StyledInput}:valid ~ &,
   ${StyledInput}:focus ~ & {
     color: #2196f3;
-    transform: translateY(-16px);
+    transform: translateY(-100%);
     font-size: 0.65em;
+    padding: 0;
+    /* background-color: indigo; */
   }
 `
 
